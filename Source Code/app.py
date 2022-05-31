@@ -1,7 +1,7 @@
 import os
 from os.path import join, dirname, realpath
 import numpy as np  
-
+from PIL import Image
 #keras
 from keras.models import load_model
 from keras.preprocessing import image
@@ -14,23 +14,28 @@ from flask import Flask, render_template, request,redirect
 
 # Define a flask app
 new_model = load_model('Source Code/brain_tumor_model.h5')
-new_model2 = load_model("Source Code/brain-tumor-model.h5")
+
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
+@app.route('/',methods=['GET'])
 @app.route('/index',methods=['GET'])
 def index():
 	# Main page
     return render_template('index.html')
 
-@app.route('/',methods=['GET'])
-def upload():
-	# Main page
-    return render_template('index.html')
+# @app.route('/',methods=['GET'])
+# def upload():
+# 	# Main page
+#     return render_template('index.html')
 
 @app.route('/about')
 def about():
 	return render_template('about.html')
+
+@app.route('/upload')
+def upload():
+	return render_template('upload.html')
 
 @app.route('/uploader',methods=['POST','GET'])
 def uploader():
@@ -46,7 +51,12 @@ def uploader():
 		img5 = image.load_img(file_path , target_size=(240,240))
 		images5 = image.img_to_array(img5)
 		images5 = np.expand_dims(images5,axis=0)
+		
+				
+		
 		prediction = new_model.predict(images5)
+		
+		
 
 		#result = prediction
 
