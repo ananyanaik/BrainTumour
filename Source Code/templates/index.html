@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.png')}}" type="">
 
-  <title> Orthoc </title>
+  <title> Healthcare </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.css')}}" />
@@ -48,7 +48,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="{{url_for('index')}}">
             <span>
-              Orthoc
+              Healthcare
             </span>
           </a>
 
@@ -94,13 +94,13 @@
                 <div class="col-md-7">
                   <div class="detail-box">
                     <h1>
-                      We Provide Best Healthcare
+                      BRAIN TUMOR DETECTION
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                      Detection of tumor and classifying Brain Tumor
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="https://en.wikipedia.org/wiki/Brain_tumor" class="btn1">
                         Read More
                       </a>
                     </div>
@@ -115,13 +115,13 @@
                 <div class="col-md-7">
                   <div class="detail-box">
                     <h1>
-                      We Provide Best Healthcare
+                      DEEP LEARNING ALGORITHMS
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                      Convolution Neural Network
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" class="btn1">
                         Read More
                       </a>
                     </div>
@@ -130,16 +130,16 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <!--<div class="carousel-item">
             <div class="container ">
               <div class="row">
                 <div class="col-md-7">
                   <div class="detail-box">
                     <h1>
-                      We Provide Best Healthcare
+                      PREDICTIONS
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                      Machines are Learning
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
@@ -150,12 +150,12 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <ol class="carousel-indicators">
           <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
           <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <li data-target="#customCarousel1" data-slide-to="2"></li>
+          <!--<li data-target="#customCarousel1" data-slide-to="2"></li>-->
         </ol>
       </div>
 
@@ -164,14 +164,14 @@
   </div>
 
 
-  <!-- department section -->
+  <!-- objectives section -->
 
   <section class="department_section layout_padding">
     <div class="department_container">
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            Our Departments
+            OBJECTIVES
           </h2>
           <p>
             Asperiores sunt consectetur impedit nulla molestiae delectus repellat laborum dolores doloremque accusantium
@@ -185,10 +185,10 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Cardiology
+                  TUMOR DETECTION
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable page when looking at its layout.
+                  Using Neural Networks to identify if the MRI has tumor present or not
                 </p>
               </div>
             </div>
@@ -200,15 +200,15 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Diagnosis
+                  TUMOR CLASSIFICATION
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable page when looking at its layout.
+                  To classify tumors using Deep Learning Classification Algorithm
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <!--<div class="col-md-3">
             <div class="box ">
               <div class="img-box">
                 <img src="{{url_for('static', filename='images/s3.png')}}" alt="">
@@ -238,17 +238,118 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="btn-box">
+        </div>-->
+        <!--<div class="btn-box">
           <a href="">
             View All
           </a>
-        </div>
+        </div>-->
       </div>
     </div>
   </section>
 
-  <!-- end department section -->
+  <!-- end objectives section -->
+
+  <!-- Categories section -->
+
+  <section class="department_section layout_padding">
+    <div class="department_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            CATEGORIES
+          </h2>
+          <p>
+            Here we put information of IV Classes
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{url_for('static', filename='images/s1.png')}}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  No tumor
+                </h5>
+                <p>
+                  The Brain scan is normal. No Tumor is detected.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{url_for('static', filename='images/s2.png')}}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  GLIOMA TUMOR
+                </h5>
+                <p>
+                  Glioma is a type of tumor that starts in the glial cells of the brain or the spine. Gliomas comprise about 30 percent of all Brain Tumors and central nervous system tumors, 80 percent of all malignant brain tumors.
+                </p>
+                <div class="btn-box">
+                  <a href="https://en.wikipedia.org/wiki/Glioma" class="btn1">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{url_for('static', filename='images/s3.png')}}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  MALIGNANT TUMOR
+                </h5>
+                <p>
+                  A malignant tumor contrasts with a non-cancerous benign tumor in that a malignancy is not self-limited in its growth, is capable of invading into adjacent tissues, and may be capable of spreading to distant tissues.
+                </p>
+                <div class="btn-box">
+                  <a href="https://en.wikipedia.org/wiki/Malignancy" class="btn1">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{url_for('static', filename='images/s4.png')}}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  PITUATARY TUMOR
+                </h5>
+                <p>
+                  Pituitary adenomas are tumors that occur in the pituitary gland. Pituitary adenomas are generally divided into three categories dependent upon their biological functioning: benign adenoma, invasive adenoma, and carcinomas.
+                </p>
+                <div class="btn-box">
+                  <a href="https://en.wikipedia.org/wiki/Pituitary_adenoma" class="btn1">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<div class="btn-box">
+          <a href="">
+            View All
+          </a>
+        </div>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- end Categories section -->
 
   <!-- about section -->
 
@@ -264,7 +365,7 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About <span>Us</span>
+                About Our <span>Project</span>
               </h2>
             </div>
             <p>
@@ -284,7 +385,7 @@
 
   <!-- end about section -->
 
-  <!-- doctor section -->
+  <!-- doctor section 
 
   <section class="doctor_section layout_padding">
     <div class="container">
@@ -395,7 +496,7 @@
 
   <!-- end doctor section -->
 
-  <!-- contact section -->
+  <!-- contact section 
   <section class="contact_section layout_padding">
     <div class="container">
       <div class="heading_container">
@@ -445,7 +546,7 @@
   </section>
   <!-- end contact section -->
 
-  <!-- client section -->
+  <!-- client section 
 
   <section class="client_section layout_padding-bottom">
     <div class="container">
@@ -546,22 +647,22 @@
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_contact">
             <h4>
-              Reach at..
+              COLLEGE DETAILS
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Canara Engineering College Benjanapadavu
                 </span>
               </a>
               <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
+                <!--<i class="fa fa-phone" aria-hidden="true"></i>-->
                 <span>
-                  Call +01 1234567890
+                  Information Science and Engineering 2022
                 </span>
               </a>
-              <a href="">
+              <!--<a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                   demo@gmail.com
@@ -583,22 +684,27 @@
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
-        </div>
+        </div>-->
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_detail">
             <h4>
-              About
+              GUIDE DETAILS
             </h4>
-            <p>
-              Beatae provident nobis mollitia magnam voluptatum, unde dicta facilis minima veniam corporis laudantium alias tenetur eveniet illum reprehenderit fugit a delectus officiis blanditiis ea.
-            </p>
+            <span>
+              Project Guide: Mr. Anal B
+            </span>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 mx-auto footer_col">
           <div class="footer_link_box">
             <h4>
-              Links
+              TEAM MEMBERS
             </h4>
+            <span>1. Ananya Nanda Naik -4CB18IS002</span>
+            <span>2. Archana Anant Shanbhag -4CB18IS005</span>
+            <span>3. Trupti Suresh Deshbhandari -4CB18IS049</span>
+            <span>4. Tushara Naik -4CB19IS400</span>
+
             <div class="footer_links">
               <a class="active" href="{{url_for('index')}}">
                 Home
@@ -620,9 +726,10 @@
         </div>
         <div class="col-md-6 col-lg-3 footer_col ">
           <h4>
-            Newsletter
+            PROJECT BATCH NUMBER
           </h4>
-          <form action="#">
+          <span>P-07</span>
+          <!--<form action="#">
             <input type="email" placeholder="Enter email" />
             <button type="submit">
               Subscribe
@@ -640,7 +747,8 @@
        
       </div>  
     </div>
-  </footer>
+  </footer>-->
+
   <!-- footer section -->
 
   <!-- jQery -->
