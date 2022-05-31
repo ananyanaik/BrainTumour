@@ -379,7 +379,7 @@ a:focus {
   width: 90px;
   height: 90px;
   margin-bottom: 15px;
-  background-color: #62d2a2;
+  background-color: #3d4779;
   border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,8 +393,8 @@ a:focus {
 }
 
 .department_section .box .img-box img {
-  max-width: 55px;
-  max-height: 55px;
+  max-width: 150px;
+  max-height: 150px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
