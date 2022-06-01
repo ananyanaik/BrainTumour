@@ -34,10 +34,7 @@
 
 	.bg {
 		/* background-image: url(static/images/brain3.mp4); */
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-left: 45%;
+		
 		/* Full height */
 		height: 100%;
 		position: fixed;
@@ -66,7 +63,7 @@
 					<p>
 						<input type="file" name="file" accept=".png, .jpg, .jpeg" onchange="previewFile(this);" required>
 					</p>
-					<img id="previewImg" src="/examples/images/transparent.png" alt="Placeholder" height="30%" width="30%">
+					<img id="previewImg" alt="Placeholder" height="30%" width="30%">
 					<p>
 						<input type="submit" value="Predict">
 					</p>
