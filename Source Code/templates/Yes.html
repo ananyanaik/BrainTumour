@@ -91,20 +91,19 @@
 	<div style="margin-top: 300px;margin-left: 300px;
 			width: 60%; border: 3px solid red; padding: 10px;">
 		<p><h1 style="text-align: center;color: red;font-size: 44px;">The Person has Brain Tumor</h1></p>
-     {% if t_type == 'meningioma_tumor' %}
-            <p class="test-left display-5 text-center pt-3">The patient has Meningioma Tumor</p>
-        {% elif t_type == 'glioma_tumor' %}
-            <p class="test-left display-5 text-center pt-3">The patient has Glioma Tumor</p>
-        {% elif t_type == 'pituitary_tumor' %}
-            <p class="test-left display-5 text-center pt-3">The patient has Pituitary Tumor</p>
-        {% else %}
-            <p class="test-left display-5 text-center pt-3">The patient has No Tumor</p>
+     {% if t_type == 'meningioma' %}
+            <p class="test-left display-5 text-center pt-3" style="text-align: center;color: red;font-size: 44px;">The patient has Meningioma Tumor</p>
+        {% elif t_type == 'glioma' %}
+            <p class="test-left display-5 text-center pt-3" style="text-align: center;color: red;font-size: 44px;">The patient has Glioma Tumor</p>
+        {% elif t_type == 'pituitary' %}
+            <p class="test-left display-5 text-center pt-3" style="text-align: center;color: red;font-size: 44px;">The patient has Pituitary Tumor</p>
+        
         {% endif %}
 	</div>
 
     <div style="text-align: center;">
-        <input type="button" value="Return Home" style="text-align: center; color:white; background-color: grey;font-size: 18px"  onClick="window.location='https://index-home.netlify.app'">
-        <input type="button" value="Check Again" style="text-align: center; color:white; background-color: grey;font-size: 18px;"  onClick="window.location='http://127.0.0.1:5000/'">
+        <input type="button" value="Return Home" style="text-align: center; color:white; background-color: grey;font-size: 18px"  onClick="window.location='http://127.0.0.1:5000'">
+        <input type="button" value="Check Again" style="text-align: center; color:white; background-color: grey;font-size: 18px;"  onClick="window.location='http://127.0.0.1:5000/upload'">
       </div>
 
 
@@ -115,7 +114,7 @@
     <script type="text/javascript">
     setTimeout(function(){
       $('.loader').fadeToggle();
-    },5000);
+    },2000);
     </script>
 
   </body>

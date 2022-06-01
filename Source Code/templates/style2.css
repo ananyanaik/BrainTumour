@@ -46,3 +46,8 @@ body {
   background: #2fdacb;
   animation-delay: 0s;
 }
+.footer_link_box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+

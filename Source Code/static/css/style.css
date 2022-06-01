@@ -376,8 +376,8 @@ a:focus {
 }
 
 .department_section .box .img-box {
-  width: 90px;
-  height: 90px;
+  width: 100%;
+  height: 150px;
   margin-bottom: 15px;
   background-color: #3d4779;
   border-radius: 100%;
@@ -904,4 +904,12 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
-/*# sourceMappingURL=style.css.map */
+
+.cat{
+  width:50%;
+}
+.img-box{
+  width:100%;
+  height:15px;
+}
+
