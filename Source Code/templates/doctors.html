@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Orthoc </title>
+  <title> Implementation </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -38,18 +38,13 @@
 
   <div class="hero_area">
 
-    <div class="hero_bg_box">
-      <img src="images/hero-bg.png" alt="">
-    </div>
+    
 
     <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <span>
-              Orthoc
-            </span>
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,11 +63,9 @@
                 <a class="nav-link" href="departments.html">Departments</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="doctors.html">Doctors <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="doctors.html">Implementation <span class="sr-only">(current)</span> </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
+  
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
@@ -85,220 +78,58 @@
     </header>
     <!-- end header section -->
   </div>
+  <div class="hero_bg_box">
+    <h1 class="h1"><strong>IMPLEMENTATION</strong></h1><br>
+    <h2 class="h2"><br>MODEL BUILDING</h2>
+    <h3 class="p">Here we build a CNN based model.
+Convolutional Neural Network(CNN) is a very famous and extremely useful Deep Learning Algorithm which specializes in image based training.
+CNN, with the enough training is capable of learning the characteristics(featurers) about the image on itself.
+We used the very famous Tensorflow library and the Keras functionality of  Tensorflow to do the training job.
+</h3>
+<img src="./images/CNN.jpeg" alt="hello">
+<h3 class="h3"><br>Graph of CNN Accuracy, Loss vs epoch</h3>
+<img src="./images/graph.png" alt="hello">
+<h2><br><strong>HOW WE TRAINED OUR MODEL?</strong></h2>
+<div class="png">
+  <img src="./images/model.png" alt="hola" class="png">
+</div>
 
-  <!-- doctor section -->
-
-  <section class="doctor_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Doctors
-        </h2>
-        <p class="col-md-10 mx-auto px-0">
-          Incilint sapiente illo quo praesentium officiis laudantium nostrum, ad adipisci cupiditate sit, quisquam aliquid. Officiis laudantium fuga ad voluptas aspernatur error fugiat quos facilis saepe quas fugit, beatae id quisquam.
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/d1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <div class="social_box">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5>
-                Elina Josh
-              </h5>
-              <h6 class="">
-                Doctor
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/d2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <div class="social_box">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5>
-                Adam View
-              </h5>
-              <h6 class="">
-                Doctor
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/d3.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <div class="social_box">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5>
-                Mia Mike
-              </h5>
-              <h6 class="">
-                Doctor
-              </h6>
-            </div>
+<!-- footer section -->
+<footer class="footer_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 footer_col">
+        <div class="footer_contact">
+          <h3><strong><u>DATASET</u></strong></h3>
+          <div class="contact_link_box">
+              <h4><br>No.of Images: </h4>
+              <h4>Data Size: </h4>
+              <h4>Data Source: </h4>
+              <h4>Dataset download link: </h4>
           </div>
         </div>
       </div>
-      <div class="btn-box">
-        <a href="">
-          View All
-        </a>
+      <div class="col-md-6 col-lg-2 mx-auto footer_col">
+        <div class="footer_link_box">
+          <h3><strong><u>SPLITTING DATASETS</u></strong></h3>
+          <h4><br>Total Dataset: </h4>
+          <h4>Training Dataset: </h4>
+          <h4>Testing Dataset: </h4>
+          <h4>Validation Dataset: </h4>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 footer_col ">
+        <h3><strong><u>TRAINING DETAILS</u><strong></h3>
+          <h4><br>Algorithm used: CNN</h4>
+          <h4>No. of Epochs: 200</h4>
+          <h4>Accuracy: 91%</h4>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- end doctor section -->
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 footer_col">
-          <div class="footer_contact">
-            <h4>
-              Reach at..
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="footer_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 footer_col">
-          <div class="footer_detail">
-            <h4>
-              About
-            </h4>
-            <p>
-              Beatae provident nobis mollitia magnam voluptatum, unde dicta facilis minima veniam corporis laudantium alias tenetur eveniet illum reprehenderit fugit a delectus officiis blanditiis ea.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto footer_col">
-          <div class="footer_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="footer_links">
-              <a class="" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="departments.html">
-                Departments
-              </a>
-              <a class="active" href="doctors.html">
-                Doctors
-              </a>
-              <a class="" href="contact.html">
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 footer_col ">
-          <h4>
-            Newsletter
-          </h4>
-          <form action="#">
-            <input type="email" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-info">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates<br><br></a>
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">ThemeWagon</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <!-- footer section -->
+</footer>
+<!-- footer section -->
+</div>
+  
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

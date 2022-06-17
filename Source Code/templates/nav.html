@@ -1,11 +1,7 @@
 <header class="header_section">
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="{{url_for('index')}}">
-          <span>
-            Healthcare
-          </span>
-        </a>
+        <a class="navbar-brand" href="{{url_for('index')}}"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class=""> </span>
@@ -14,25 +10,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('about')}}"> About</a>
+              <a class="nav-link" href="{{url_for('index')}}">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{url_for('upload')}}">Detection</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url_for('static', filename='doctors.html')}}">Doctors</a>
+              <a class="nav-link" href="{{url_for('impl')}}">Implementation</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('static', filename='contact.html')}}">Contact Us</a>
-            </li>
-            <form class="form-inline">
-              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
-            </form>
           </ul>
         </div>
       </nav>
