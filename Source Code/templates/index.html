@@ -47,9 +47,6 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="{{url_for('index')}}">
-            <!--<span>
-              Healthcare
-            </span>-->
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,22 +59,11 @@
                 <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{url_for('about')}}"> About</a>
+                <a class="nav-link" href="{{url_for('upload')}}">Detection</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{url_for('static', filename='departments.html')}}">Departments</a>
+                <a class="nav-link" href="{{url_for('impl')}}">Implementation</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{url_for('static', filename='doctors.html')}}">Doctors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{url_for('static', filename='contact.html')}}">Contact Us</a>
-              </li>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
             </ul>
           </div>
         </nav>
@@ -130,32 +116,10 @@
               </div>
             </div>
           </div>
-          <!--<div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                    <h1>
-                      PREDICTIONS
-                    </h1>
-                    <p>
-                      Machines are Learning
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
         <ol class="carousel-indicators">
           <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
           <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <!--<li data-target="#customCarousel1" data-slide-to="2"></li>-->
         </ol>
       </div>
 
@@ -193,7 +157,7 @@
           <div class="col-md-3">
             <div class="box ">
               <div class="img-box">
-                <img src="{{url_for('static', filename='images/s2.png')}}" alt="">
+                <img src="{{url_for('static', filename='images/obj1.jfif')}}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -208,7 +172,7 @@
           <div class="col-md-3">
             <div class="box ">
               <div class="img-box">
-                <img src="{{url_for('static', filename='images/s3.png')}}" alt="">
+                <img src="{{url_for('static', filename='images/obj2.webp')}}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -236,11 +200,6 @@
             </div>
           </div>
         </div>
-        <!--<div class="btn-box">
-          <a href="">
-            View All
-          </a>
-        </div>-->
       </div>
     </div>
   </section>
@@ -257,7 +216,7 @@
             CATEGORIES
           </h2>
           <p>
-            Here we put information of IV Classes
+            Here we put information of 3 Classes
           </p>
         </div>
         <div class="row">
@@ -330,371 +289,53 @@
       </div>
     </div>
   </section>
-
   <!-- end Categories section -->
 
-  <!-- about section -->
-
-  <section class="about_section layout_margin-bottom">
-    <div class="container  ">
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="{{url_for('static', filename='images/about-img.jpg')}}" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Our <span>Project</span>
-              </h2>
-            </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end about section -->
-
-  <!-- doctor section 
-
-  <section class="doctor_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Doctors
-        </h2>
-        <p class="col-md-10 mx-auto px-0">
-          Incilint sapiente illo quo praesentium officiis laudantium nostrum, ad adipisci cupiditate sit, quisquam aliquid. Officiis laudantium fuga ad voluptas aspernatur error fugiat quos facilis saepe quas fugit, beatae id quisquam.
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="{{url_for('static', filename='images/d1.jpg')}}" alt="">
-            </div>
-            <div class="detail-box">
-              <div class="social_box">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5>
-                Elina Josh
-              </h5>
-              <h6 class="">
-                Doctor
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="{{url_for('static', filename='images/d2.jpg')}}" alt="">
-            </div>
-            <div class="detail-box">
-              <div class="social_box">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5>
-                Adam View
-              </h5>
-              <h6 class="">
-                Doctor
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="{{url_for('static', filename='images/d3.jpg')}}" alt="">
-            </div>
-            <div class="detail-box">
-              <div class="social_box">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5>
-                Mia Mike
-              </h5>
-              <h6 class="">
-                Doctor
-              </h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          View All
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end doctor section -->
-
-  <!-- contact section 
-  <section class="contact_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Get In Touch
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container contact-form">
-            <form action="">
-              <div class="form-row">
-                <div class="col-lg-6">
-                  <div>
-                    <input type="text" placeholder="Your Name" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div>
-                    <input type="text" placeholder="Phone Number" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end contact section -->
-
-  <!-- client section 
-
-  <section class="client_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container heading_center ">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="{{url_for('static', filename='images/client.jpg')}}" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Alan Emerson
-                      </h6>
-                    </div>
-                    <p>
-                      Enim consequatur odio assumenda voluptas voluptatibus esse nobis officia. Magnam, aspernatur nostrum explicabo, distinctio laudantium delectus deserunt quia quidem magni corporis earum inventore totam consectetur corrupti! Corrupti, nihil sunt? Natus.
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="{{url_for('static', filename='images/client.jpg')}}" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Alan Emerson
-                      </h6>
-                    </div>
-                    <p>
-                      Enim consequatur odio assumenda voluptas voluptatibus esse nobis officia. Magnam, aspernatur nostrum explicabo, distinctio laudantium delectus deserunt quia quidem magni corporis earum inventore totam consectetur corrupti! Corrupti, nihil sunt? Natus.
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="{{url_for('static', filename='images/client.jpg')}}" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Alan Emerson
-                      </h6>
-                    </div>
-                    <p>
-                      Enim consequatur odio assumenda voluptas voluptatibus esse nobis officia. Magnam, aspernatur nostrum explicabo, distinctio laudantium delectus deserunt quia quidem magni corporis earum inventore totam consectetur corrupti! Corrupti, nihil sunt? Natus.
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel_btn-container">
-          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end client section -->
-
   <!-- footer section -->
-  
   <footer class="footer_section">
-   
+    <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <h4>
-            COLLEGE DETAILS
-          </h4>
-          <div class="box ">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span>
-              Canara Engineering College <br>Benjanapadavu
-            </span><br>
-            <div class="img-box">
-              
-            </div>
-            <div class="detail-box">
-              <span>
-                Information Science and Engineering <br>2022 
-              </span>
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_contact">
+            <h4>
+              COLLEGE DETAILS
+            </h4>
+            <div class="contact_link_box">
+                <span>
+                  Canara Engineering College, Mangalore
+                </span>
+                <span>
+                  Department of Information Science and Engineering
+                </span>
+                <span>
+                  2022
+                </span>
             </div>
           </div>
         </div>
-          
-            
-            
-               
-              
-          
-                
-          
-              
-          <div class="row2">
+        <div class="col-md-6 col-lg-2 mx-auto footer_col">
+          <div class="footer_link_box">
             <h4>
-              GUIDE DETAILS  
+              GUIDE NAME
             </h4>
-            <span>
-              Project Guide: Mr. Anal B <br>
-            </span>
+            <p>Mr. Anal B</p>
+            <span>Assistant Professor</span>
+            <span>Dept. of ISE</span>
           </div>
-       
-          <div class="row3">
-            <h4>
-              TEAM MEMBERS
-            </h4>
-              <span>1. Ananya Nanda Naik 4CB18IS003</span><br>
-              <span>2. Archana Anant Shanbhag 4CB18IS005</span><br>
-              <span>3. Trupti Suresh Deshbhandari 4CB18IS049</span><br>
-              <span>4. Tushara Naik 4CB19IS400</span>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col ">
+          <h4>
+            TEAM MEMBERS
+          </h4>
+          <p>1. Ananya N Naik 4CB18IS003</p>
+          <p><br>2. Archana A Shanbhag 4CB18IS005</p>
+          <p><br>3. Trupti S Deshbhandari 4CB18IS049</p>
+          <p><br>4. Tushara Naik 4CB19IS400</p>
           </div>
-
-           
-          <!--<form action="#">
-            <input type="email" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
         </div>
       </div>
-      <div class="footer-info">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates<br><br></a>
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">ThemeWagon</a>
-        </p>
-       
-      </div>  
     </div>
-  </footer>-->
-
+  </footer>
   <!-- footer section -->
 
   <!-- jQery -->

@@ -69,6 +69,10 @@ def index():
 def about():
 	return render_template('about.html')
 
+@app.route('/impl')
+def impl():
+	return render_template('impl.html')
+
 @app.route('/upload')
 def upload():
 	return render_template('upload.html')
